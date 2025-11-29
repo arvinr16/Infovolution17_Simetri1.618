@@ -10,18 +10,37 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <div></div>
-        <div id="hamburger" class="hamburger"></div>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Contact</a></li>
+      <nav id="navbar" class="navbar">
+        <div>
+          <span class="bg-img-navbar"></span>
+          <img src="images/iconBuilding1.png" alt="icon-building-header" />
+          <span class="pipe-navbar"></span>
+          <h1>
+            Simetri
+            <span
+              style="
+                background: linear-gradient(16deg, #1f5284, #3a539c, #44126b);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+              >1.618</span
+            >
+          </h1>
+        </div>
+        <div id="hamburger" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul id="nav-link" class="nav-link">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -30,5 +49,6 @@
     <section id="service"></section>
     <section id="contact"></section>
     <footer></footer>
+    <script src="main.js"></script>
   </body>
 </html>
