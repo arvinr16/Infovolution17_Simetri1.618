@@ -13,6 +13,7 @@ header {
 
 section {
   padding: 64px 103.55px;
+  scroll-margin-top: 90px;
   position: relative;
 }
 
@@ -175,6 +176,80 @@ section::before {
 }
 /* Navbar - Hamburger Menu End */
 /* Navbar End */
+
+/* Landing Section Start */
+section#landing {
+  display: flex;
+  position: relative;
+  gap: 90px;
+}
+
+#typewriter-div {
+  display: block;
+  width: 800px;
+  padding: 10px 10px;
+  height: auto;
+  position: relative;
+}
+
+#typewriter {
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 600;
+  background: linear-gradient(45deg, #0180ff, #85c2ff, #4f9df6, #a574ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: default;
+  overflow: hidden;
+}
+
+#typewriter-div a {
+    top: 180px;
+    left: 0;
+    position: absolute;
+}
+
+.btn-landing {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 18px;
+  color: white;
+  background: linear-gradient(45deg, #0180ff, #60aaff);
+  border: 3px solid #43a1ff;
+  border-radius: 50px;
+  background-clip: border-box;
+  -webkit-text-fill-color: white;
+  transition: background 0.5s ease, border 0.5s ease, color 0.5s ease,
+  -webkit-text-fill-color 0.5s ease, text 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-landing:hover {
+  background: linear-gradient(45deg, #0180ff, #60aaff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 3px solid #81c0ff;
+  box-shadow: 0 5px 10px #4da6ff;
+}
+
+.pipe-landing {
+  top: 80px;
+  right: 360px;
+  background: black;
+  border-radius: 50px;
+  width: 2px;
+  height: 220px;
+  position: absolute;
+}
+
+.img-landing-detail img {
+  width: 220px;
+}
+
+/* About Section Start */
+section#about {
+  margin-top: 148px;
+}
 
 @media only screen and (max-width: 812px) {
   #navbar.active {
