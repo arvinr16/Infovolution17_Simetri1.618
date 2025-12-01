@@ -137,7 +137,10 @@
         <div class="service-div-item">
           <img src="images/gambarWebDevelopment1.jpg" alt="service-item-1" />
           <h2 class="service-div-item-h2">Website Experience</h2>
-          <p>We create simple, modern interfaces that make your website easy to explore.</p>
+          <p>
+            We create simple, modern interfaces that make your website easy to
+            explore.
+          </p>
         </div>
       </div>
       <a href="#contact" class="down-arrow">
@@ -149,7 +152,58 @@
         />
       </a>
     </section>
-    <section id="contact"></section>
+    <section id="contact">
+      <h2 class="contact-h2">
+        Let’s work together. Send us a message and we’ll respond shortly.
+      </h2>
+      <div class="form">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <h1>Contact our Team</h1>
+          <input
+            type="hidden"
+            name="access_key"
+            value="2a7be5cd-8911-4c20-9d57-3400be67ce9a"
+          />
+          <input type="checkbox" name="botcheck" class="hidden" />
+          <div class="form-group">
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="message">Message</label>
+              <input
+                type="text"
+                id="message"
+                class="message"
+                name="message"
+                placeholder="Your Message"
+                required
+              />
+            </div>
+          </div>
+          <div class="btn-submit-div">
+            <button type="submit" class="btn-submit">Submit Form</button>
+          </div>
+        </form>
+      </div>
+    </section>
     <footer></footer>
     <script src="main.js"></script>
   </body>
