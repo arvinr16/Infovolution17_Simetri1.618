@@ -350,13 +350,15 @@ section#about::before {
   justify-self: center;
   width: fit-content;
 }
+/* About Section End */
 
+/* Pointed Down Navigation Start */
 .down-arrow {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 50px;
     text-decoration: none;
 }
 
@@ -375,6 +377,85 @@ section#about::before {
 
 .arrow {
     animation: 2.5s upDown infinite;
+}
+/* Pointed Down Navigation End */
+
+/* Service Section Start */
+section#service {
+  margin-top: 84px;
+  padding-top: 100px;
+}
+
+section#service::before {
+  content: "Our Services";
+}
+
+.service-h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #676767;
+}
+
+.service-div {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+}
+
+.service-div-item {
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 11px #c7c7c7;
+    transition: all 1s ease;
+}
+
+.service-div-item:hover {
+    box-shadow: 5px 7px 24px #c7c7c7;
+    transform: scale(0.95);
+}
+
+.service-div-item img {
+    border-radius: 15px;
+    width: 100%;
+    height: 260px;
+    filter: grayscale(100);
+    object-fit: cover;
+}
+
+.service-div-item:hover img {
+    filter: grayscale(0);
+}
+
+.service-div-item-h2 {
+    background: linear-gradient(45deg, #0180ff, #4f9df6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.service-div-item p {
+    color: #434343;
+}
+/* Service Section End */
+
+/* Contact Section Start */
+section#contact {
+  margin-top: 84px;
+  padding-top: 100px;
+}
+
+section#contact::before {
+  content: "Our Contact";
+}
+
+.service-h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #676767;
 }
 
 @keyframes upDown {
