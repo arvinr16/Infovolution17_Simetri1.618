@@ -564,6 +564,49 @@ form h1 {
 }
 /* Contact Section End */
 
+/* Footer Section Start */
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px 128px;
+  margin-top: 84px;
+  background: linear-gradient(45deg, #595959, #a5a5a5, #494949);
+}
+
+footer div h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+.social-icon {
+    margin: 16px 0 16px 0;
+  display: flex;
+  gap: 16px;
+}
+
+.social-icon a {
+    transition: 0.5s;
+}
+
+.social-icon a:hover {
+    transform: scale(0.9);
+}
+
+.social-icon img {
+  width: 50px;
+}
+
+footer div h6 {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 10px;
+}
+/* Footer Section End */
+
 @keyframes upDown {
   0% {
     transform: translateY(0);
