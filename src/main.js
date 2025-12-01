@@ -52,3 +52,37 @@ function typewriter() {
 };
 
 document.addEventListener("DOMContentLoaded", typewriter);
+
+/* Responsive Purpose */
+document.addEventListener("DOMContentLoaded", () => {
+    const imgContainer = document.querySelector(".img-landing-detail");
+    const image = imgContainer?.querySelector("img");
+    const target = document.querySelector(".landing-title");
+
+    if (!image || !target) return;
+
+    const originalParent = image.parentNode;
+    const originalNextSibling = image.nextSibling;
+
+    const mediaQuery = window.matchMedia("(max-width: 688px)");
+
+    function handleResize(e) {
+        if (e.matches) {
+            // Layar max-width: 958px → pindah sebelum tombol
+            target.parentNode.insertBefore(image, target);
+        } else {
+            // Layar min-width: 958px → kembalikan ke posisi awal
+            if (originalNextSibling && originalNextSibling.parentNode === originalParent) {
+                originalParent.insertBefore(image, originalNextSibling);
+            } else {
+                originalParent.appendChild(image);
+            }
+        }
+    }
+
+    // Jalankan saat pertama kali
+    handleResize(mediaQuery);
+
+    // Dengarkan perubahan media query
+    mediaQuery.addEventListener("change", handleResize);
+});
