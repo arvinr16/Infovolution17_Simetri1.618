@@ -3,6 +3,7 @@
   padding: 0;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 header {
@@ -524,11 +525,11 @@ form h1 {
 }
 
 .input-group input {
+  width: 100%;
   padding: 3px 0 3px 4px;
   font-weight: 400;
   border: 1.5px solid #176ed2;
   border-radius: 5px;
-  border-bottom: 1.5px solid #176ed2;
   outline: none;
 }
 
@@ -539,8 +540,22 @@ form h1 {
   opacity: 0.5;
 }
 
-.input-group input.message {
-  padding-bottom: 70px;
+.input-group textarea {
+  width: 100%;
+  height: 110px;
+  padding: 3px 0 3px 4px;
+  font-weight: 400;
+  border: 1.5px solid #176ed2;
+  border-radius: 5px;
+  outline: none;
+  resize: vertical;
+}
+
+.input-group textarea::placeholder {
+  background: linear-gradient(45deg, #176ed2, #8b1be0);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.5;
 }
 
 .btn-submit-div {
