@@ -893,3 +893,49 @@ footer div h6 {
         padding-top: 100px;
     }
 }
+/* Responsive Design End */
+
+
+/* Easter Egg Start */
+section#easter-egg {
+  display: none;
+}
+
+@media only screen and (max-width: 293px) {
+  header {
+    display: none;
+  }
+
+  section#landing {
+    display: none;
+  }
+  
+  section#about {
+    display: none;
+  }
+  section#service {
+    display: none;
+  }
+
+  section#contact {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  section#easter-egg {
+    display: flex;
+    justify-content: center;
+  }
+
+  section#easter-egg h1 {
+    padding: 10px 10px;
+    font-size: 32px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #809dfd, #673cdc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
